@@ -1,0 +1,22 @@
+.widget {
+    display: grid;
+    font-size: 10px;
+    grid-gap: 1em 2em;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(247, 37, 133);
+    padding: 1em 2em;
+    border: 2px solid rgb(181, 23, 158);
+
+}
+
+@media only screen and (max-width: 800px) {
+    .widget {
+        grid-auto-flow: row;
+        font-size: 9px;
+        grid-template-columns: auto;
+        justify-items: normal;
+    }
+}

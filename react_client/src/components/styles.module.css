@@ -1,0 +1,51 @@
+.memory,
+.info,
+.cpu {
+    font-size: 1.6em;
+    border-radius: .5em;
+    background-color: rgb(181, 23, 158);
+    padding: 2em 1em;
+    color: #eee;
+    text-align: center;
+}
+
+.info {
+    grid-column: 1/-1;
+}
+
+.infoCol {
+    margin-bottom: .5em;
+}
+
+span {
+    color: #999;
+    font-weight: 800;
+}
+
+h2 {
+    color: #999;
+    margin-bottom: .5em;
+}
+
+p {
+    color: rgb(76, 201, 240);
+    margin-bottom: .2em;
+}
+
+/* canvas {
+    height: 18em;
+    width: 18em;
+} */
+
+.memoryDetails {
+    display: flex;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .cpu,
+    .memory {
+        order: 2
+    }
+}
